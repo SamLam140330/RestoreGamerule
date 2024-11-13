@@ -4,6 +4,7 @@ import com.github.samlam140330.restoregamerule.handler.CommandExecutorHandler;
 import com.github.samlam140330.restoregamerule.handler.TabCompletionHandler;
 import com.github.samlam140330.restoregamerule.manager.FileManager;
 import com.github.samlam140330.restoregamerule.manager.GameruleManager;
+import com.github.samlam140330.restoregamerule.manager.UpdateManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -15,6 +16,8 @@ public final class Restoregamerule extends JavaPlugin {
         GameruleManager gameruleManager = new GameruleManager(this, fileManager, "gamerules.yml");
         gameruleManager.applyGamerules();
         registerCommands(gameruleManager);
+        UpdateManager updateManager = new UpdateManager(this, fileManager);
+        updateManager.checkUpdate();
     }
 
     private void registerCommands(GameruleManager gameruleManager) {

@@ -13,6 +13,10 @@ public class FileManager {
         this.plugin = plugin;
     }
 
+    public void createDefaultYMLFile() {
+        plugin.saveDefaultConfig();
+    }
+
     public void createYMLFile(@NotNull String fileName) {
         File configFile = getFile(fileName);
         if (!configFile.exists()) {
