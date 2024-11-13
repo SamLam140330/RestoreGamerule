@@ -4,7 +4,7 @@ main: com.github.samlam140330.restoregamerule.Restoregamerule
 api-version: "1.13"
 prefix: RestoreGamerule
 authors: [SamLam140330]
-softdepend: [SlimeWorldManager, Multiverse-Core, WorldManager, MultiWorld]
+softdepend: [SlimeWorldManager, SlimeWorldPlugin, Multiverse-Core, WorldManager, MultiWorld]
 description: "To store gamerules in a file and load them when the server starts."
 website: https://github.com/SamLam140330/RestoreGamerule
 commands:
