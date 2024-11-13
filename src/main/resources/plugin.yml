@@ -13,3 +13,12 @@ commands:
     aliases: [sgr]
     usage: "Usage: /set-gamerule <world> <gamerule> <value>"
     permission: restoregamerule.setgamerule
+permissions:
+    restoregamerule.setgamerule:
+        description: "Allow to set gamerules and save it to the file."
+        default: op
+    restoregamerule.*:
+        description: "Allow to use all commands of RestoreGamerule."
+        default: op
+        children:
+            restoregamerule.setgamerule: true
