@@ -19,12 +19,12 @@ public class UpdateManager {
             return;
         }
 
-        final int resourceId = 1;
+        final int resourceId = 120772;
         new UpdateChecker(plugin, resourceId).getVersion(version -> {
             if (plugin.getDescription().getVersion().equalsIgnoreCase(version)) {
-                plugin.getLogger().info("You are running the latest version.");
+                plugin.getLogger().info("You are running the latest version: " + plugin.getDescription().getVersion());
             } else {
-                plugin.getLogger().info("There is a new version available.");
+                plugin.getLogger().warning("There is a new version available in SpigotMC: " + version);
             }
         });
     }

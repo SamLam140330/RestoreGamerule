@@ -6,7 +6,7 @@ prefix: RestoreGamerule
 authors: [SamLam140330]
 softdepend: [SlimeWorldManager, SlimeWorldPlugin, Multiverse-Core, WorldManager, MultiWorld]
 description: "To store gamerules in a file and load them when the server starts."
-website: https://github.com/SamLam140330/RestoreGamerule
+website: https://www.spigotmc.org/resources/restore-gamerule.120772/
 commands:
   set-gamerule:
     description: "Set a game rule and save it to the file."
